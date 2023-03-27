@@ -1,0 +1,257 @@
+@media screen and (min-width: 480px), (max-width: 767px) {
+	/* Колонки */
+	.container {
+		max-width: 428px;
+	}
+	.btn-hamburger {
+		background-color: #ffffff;
+		border: none;
+		width: 32px;
+		height: 22px;
+		stroke: #2e2f42;
+		position: relative;
+	}
+	.logo-mobail {
+		display: flex;
+		justify-content: space-between;
+	}
+	.hamburger-img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.header {
+		padding: 24px 0;
+		border-bottom: 1px solid var(--footer-description-color);
+	}
+	.header-navigation {
+		margin-bottom: auto;
+	}
+
+	.header-link.curent {
+		color: var(--accent-color);
+	}
+	.header-link {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1.1;
+		text-transform: capitalize;
+	}
+	.header-list {
+		display: flex;
+		flex-direction: column;
+		row-gap: 40px;
+	}
+	.header-btn {
+		background: #e7e9fc;
+		border: 1px solid #2e2f42;
+		cursor: pointer;
+		border: none;
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		display: block;
+		margin-left: auto;
+		margin-bottom: 32px;
+	}
+	.header-meny {
+		width: 100%;
+		height: 100vh;
+		position: fixed;
+		right: 0;
+		top: 0;
+		padding: 24px 24px 40px 40px;
+		background-color: var(--modal-fon);
+		display: flex;
+		flex-direction: column;
+	}
+
+	.meny-item {
+		list-style: none;
+	}
+
+	.header-contacts {
+		display: block;
+		margin-top: auto;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1.1;
+		text-transform: capitalize;
+	}
+	.header-mobail-email {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 1.2;
+		color: #434455;
+		margin-top: 40px;
+	}
+	.header-meny-list {
+		margin-top: 48px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 56px;
+	}
+	.meny-item {
+		width: 40px;
+		height: 40px;
+		list-style: none;
+	}
+	.meny-link {
+		height: 100%;
+		width: 100%;
+		border-radius: 50%;
+		background-color: var(--accent-color);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		fill: var(--team-background-color);
+	}
+	.is-open {
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+	}
+
+	.hero {
+		background-color: var(--basic-color);
+		padding: 112px 0;
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+			url(../images/hero-background-mobail.jpg);
+	}
+
+	@media (min-device-pixel-ratio: 2),
+		(-webkit-min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+		.hero {
+			background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+				url("../images/hero-background-mobail@2x.jpg");
+		}
+	}
+
+	.hero-title {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1.1;
+		text-transform: capitalize;
+		max-width: 320px;
+		margin-bottom: 72px;
+	}
+
+	.strategy {
+		padding: 96px 0;
+	}
+	.strategy-title {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1.1;
+		text-align: center;
+		text-transform: capitalize;
+	}
+	.strategy-description {
+		font-weight: 500;
+	}
+	.strategy-list {
+		display: flex;
+		flex-direction: column;
+		row-gap: 72px;
+	}
+
+	/* Фото */
+
+	/* Our Team */
+	.team {
+		padding: 96px 0;
+	}
+	.team-title {
+		font-weight: 700;
+	}
+	.container-smm {
+		max-width: 294px;
+	}
+	.team-list {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		row-gap: 72px;
+	}
+
+	/* Customers */
+	.customers {
+		padding: 96px 0;
+	}
+	.customers-item {
+		width: calc((100% - 16px) / 2);
+	}
+	.customers-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 72px 16px;
+	}
+	.footer {
+		padding: 96px 0;
+	}
+	.footer-logo-description {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.footer-icon {
+		margin-top: 72px;
+	}
+	.footer-form {
+		margin-top: 72px;
+	}
+	.footer-btn {
+		margin-top: 16px;
+	}
+	.footer-icon-link {
+		background-color: var(--accent-color);
+	}
+	.footer-form-input {
+		opacity: 0.3;
+		width: 100%;
+	}
+	.footer-description {
+		max-width: 268px;
+	}
+	.footer-form-label {
+		text-align: center;
+	}
+	.footer-icon-title {
+		text-align: center;
+	}
+	.footer-icon-list {
+		justify-content: center;
+	}
+	.footer-btn {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.modal {
+		width: 392px;
+		padding: 16px;
+	}
+}
+@media screen and (max-width: 1199px) {
+	.strategy-icon {
+		display: none;
+	}
+	.work {
+		display: none;
+	}
+}
+@media screen and (min-width: 320px) and (max-width: 428px) {
+	.header-meny-list {
+		gap: 26px;
+	}
+	.tel {
+		font-size: 26px;
+	}
+	.modal {
+		min-width: 320px;
+		padding: 5px;
+	}
+}
