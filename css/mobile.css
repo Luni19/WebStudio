@@ -11,80 +11,104 @@
 		stroke: #2e2f42;
 		position: relative;
 	}
-	.logo-mobail {
-		display: flex;
-		justify-content: space-between;
-	}
 	.hamburger-img {
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
-	.header {
-		padding: 24px 0;
-		border-bottom: 1px solid var(--footer-description-color);
+	.logo-icon {
+		display: flex;
+		justify-content: space-between;
 	}
-	.header-navigation {
-		margin-bottom: auto;
-	}
-
-	.header-link.curent {
-		color: var(--accent-color);
-	}
-	.header-link {
-		font-weight: 700;
-		font-size: 36px;
-		line-height: 1.1;
-		text-transform: capitalize;
-	}
-	.header-list {
+	.header-meny {
 		display: flex;
 		flex-direction: column;
-		row-gap: 40px;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		right: 0;
+		top: 0;
+		z-index: 1001;
+		padding: 24px 24px 24px;
+		background-color: var(--modal-fon);
+	}
+	.mobail-contacts-item {
+		margin-top: auto;
+	}
+	.mobail-meny-container {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+	}
+	.mobail-contacts {
+		text-decoration: none;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1.11;
+		letter-spacing: 0.02em;
+		text-transform: capitalize;
+		color: #434455;
+	}
+	.mobail-contacts-email {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 1.2;
+		letter-spacing: 0.02em;
+		color: #434455;
+		text-decoration: none;
+	}
+	.mobail-list {
+		padding-top: 56px;
+		margin-bottom: 200px;
+	}
+	.mobail-contacts-item:not(:last-child) {
+		margin-bottom: 40px;
+	}
+	.mobail-item:not(:last-child) {
+		margin-bottom: 40px;
+	}
+	.mobail-link {
+		font-family: "Roboto";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1.11;
+		letter-spacing: 0.02em;
+		text-transform: capitalize;
+		color: #2e2f42;
+		text-decoration: none;
+	}
+	.mobail-link:is(:hover, :focus) {
+		color: var(--accent-color);
+	}
+
+	.mobail-contacts:active {
+		color: var(--accent-color);
+	}
+	.mobail-contacts:hover,
+	.mobail-contacts:focus {
+		color: var(--accent-color);
+	}
+	.mobail-contacts-email:active {
+		color: var(--accent-color);
+	}
+	.mobail-contacts-email:hover,
+	.mobail-contacts-email:focus {
+		color: var(--accent-color);
 	}
 	.header-btn {
+		position: absolute;
+		top: 0px;
+		right: 0px;
 		background: #e7e9fc;
 		border: 1px solid #2e2f42;
 		cursor: pointer;
 		border: none;
+		line-height: 0;
 		width: 24px;
 		height: 24px;
 		border-radius: 50%;
-		display: block;
-		margin-left: auto;
-		margin-bottom: 32px;
-	}
-	.header-meny {
-		width: 100%;
-		height: 100vh;
-		position: fixed;
-		right: 0;
-		top: 0;
-		padding: 24px 24px 40px 40px;
-		background-color: var(--modal-fon);
-		display: flex;
-		flex-direction: column;
-	}
-
-	.meny-item {
-		list-style: none;
-	}
-
-	.header-contacts {
-		display: block;
-		margin-top: auto;
-		font-weight: 700;
-		font-size: 36px;
-		line-height: 1.1;
-		text-transform: capitalize;
-	}
-	.header-mobail-email {
-		font-weight: 500;
-		font-size: 20px;
-		line-height: 1.2;
-		color: #434455;
-		margin-top: 40px;
 	}
 	.header-meny-list {
 		margin-top: 48px;
@@ -114,6 +138,8 @@
 	}
 
 	.hero {
+		max-width: 428px;
+		width: 100%;
 		background-color: var(--basic-color);
 		padding: 112px 0;
 		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -231,8 +257,20 @@
 		margin-right: auto;
 	}
 	.modal {
+		z-index: 101;
 		width: 392px;
 		padding: 16px;
+	}
+
+	.filter-list {
+		display: flex;
+		margin-top: 96px;
+		gap: 16px 24px;
+		margin-bottom: 72px;
+		flex-wrap: wrap;
+	}
+	.filter-btn {
+		padding: 8px 16px;
 	}
 }
 @media screen and (max-width: 1199px) {
@@ -247,11 +285,18 @@
 	.header-meny-list {
 		gap: 26px;
 	}
-	.tel {
+	.mobail-contacts {
 		font-size: 26px;
 	}
 	.modal {
-		min-width: 320px;
+		width: calc(100% - 2 * 15px);
 		padding: 5px;
 	}
+}
+@media screen and (max-width: 767px) {
+	.header-navigation,
+	.header-adress {
+		display: none;
+	}
+	
 }
