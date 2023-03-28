@@ -57,7 +57,10 @@ img {
 }
 
 /* Шапка профіля  */
-
+.header {
+	padding: 24px 0;
+	border-bottom: 1px solid var(--footer-description-color);
+}
 .header-logo {
 	font-family: "Raleway", sans-serif;
 	font-weight: 800;
@@ -68,44 +71,16 @@ img {
 	text-transform: uppercase;
 	color: var(--basic-color);
 	margin-right: 76px;
+	display: flex;
+	align-items: center;
 }
 .header-logo span {
 	color: var(--logo-color);
 }
-
-.header-link:is(:hover, :focus) {
-	color: var(--accent-color);
-	text-decoration: underline;
-}
-.header-link {
-	letter-spacing: 0.02em;
-	text-decoration: none;
-	color: var(--basic-color);
-	transition-property: color;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-contacts {
-	letter-spacing: 0.02em;
-	text-decoration: none;
-	font-style: normal;
-	color: var(--adress-description-color);
-	align-items: center;
-	transition-property: color;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-contacts:active {
-	color: var(--accent-color);
-}
-.header-contacts:hover,
-.header-contacts:focus {
-	color: var(--accent-color);
-}
 /* Банер */
 
 .hero {
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	background-size: auto;
@@ -262,10 +237,7 @@ img {
 }
 /* /Customers */
 /* footer */
-/* .footer-content {
-	display: flex;
-	justify-content: space-between;
-} */
+
 .footer {
 	background-color: var(--basic-color);
 	/* padding: 100px 156px; */
@@ -582,15 +554,6 @@ img {
 /* /modal */
 /* Портфоліо */
 
-.filter-list {
-	display: flex;
-	justify-content: center;
-	margin-top: 96px;
-	gap: 24px;
-	margin-bottom: 72px;
-	flex-wrap: wrap;
-}
-
 .filter-btn {
 	font-weight: 500;
 	font-size: 16px;
@@ -599,8 +562,7 @@ img {
 	color: var(--btn-color);
 	background-color: var(--team-background-color);
 	border: 1px solid var(--footer-description-color);
-	min-width: 69px;
-	padding: 12px 24px;
+	min-width: 59px;
 	cursor: pointer;
 	font-family: inherit;
 	border-radius: 4px;
