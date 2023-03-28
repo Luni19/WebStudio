@@ -2,23 +2,16 @@
 	.container {
 		max-width: 1158px;
 	}
-	.header-link {
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 1.5;
-	}
 	.header-adress {
 		display: flex;
 		gap: 40px;
-		align-items: center;
+	}
+	.header-email {
+		margin-bottom: 0;
 	}
 	.header-contacts {
 		font-size: 16px;
 		line-height: 1.5;
-		justify-content: space-between;
-	}
-	.header-list {
-		margin-right: 300px;
 	}
 
 	.hero {
