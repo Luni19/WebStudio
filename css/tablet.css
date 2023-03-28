@@ -6,50 +6,48 @@
 		display: none;
 	}
 	.header-meny {
-		background-color: transparent;
-		width: unset;
-		height: unset;
-		position: static;
-		padding: 0;
-		flex-direction: row;
-	}
-
-	.header-meny-list {
 		display: none;
 	}
-	.header-contacts {
-		font-weight: 400;
-		font-size: 12px;
-		line-height: 14px;
-		letter-spacing: 0.04em;
-		color: #434455;
-		margin-top: 0;
+	.header-container-nav {
+		display: flex;
+	}
+	.header-container {
+		display: flex;
+		justify-content: space-between;
 	}
 
+	.header-navigation {
+		display: flex;
+		align-items: center;
+	}
+	.header-list {
+		display: flex;
+		gap: 40px;
+	}
+	.header-email {
+		margin-bottom: 12px;
+	}
+
+	.header-link:is(:hover, :focus) {
+		color: var(--accent-color);
+		text-decoration: underline;
+	}
 	.header-link {
 		font-weight: 500;
 		font-size: 16px;
 		line-height: 1.5;
+		letter-spacing: 0.02em;
+		text-decoration: none;
+		color: var(--basic-color);
+		transition-property: color;
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	}
-	.header-btn {
-		display: none;
-	}
-
-	.header-container {
-		display: flex;
-	}
-	.header-content {
-		display: flex;
-	}
-
-	.header-list {
-		flex-direction: row;
-		gap: 40px;
-		margin-right: 121px;
-	}
-
 	.header-item {
 		position: relative;
+	}
+	.header-link.curent {
+		color: var(--accent-color);
 	}
 	.header-link.curent::after {
 		content: "";
@@ -63,8 +61,28 @@
 		position: absolute;
 	}
 
+	.header-contacts {
+		font-size: 12px;
+		line-height: 1.17;
+		letter-spacing: 0.02em;
+		text-decoration: none;
+		font-style: normal;
+		color: var(--adress-description-color);
+		align-items: center;
+		transition-property: color;
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	.header-contacts:active {
+		color: var(--accent-color);
+	}
+	.header-contacts:hover,
+	.header-contacts:focus {
+		color: var(--accent-color);
+	}
+
 	.hero {
-		max-width: 100%;
+		max-width: 738px;
 		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 			url(../images/hero-background-tablet.jpg);
 	}
@@ -152,5 +170,11 @@
 		display: flex;
 		flex-wrap: wrap;
 		column-gap: 24px;
+	}
+	.filter-list {
+		justify-content: center;
+	}
+	.filter-btn {
+		padding: 12px 24px;
 	}
 }
