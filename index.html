@@ -18,77 +18,86 @@
 		/>
 	</head>
 	<body>
-		<!-- Шапка профіля -->
 		<header class="header">
 			<div class="container header-container">
-				<div class="header-content">
-					<div class="logo-mobail">
+				<div class="header-container-nav">
+					<div class="logo-icon">
 						<a href="./index.html" class="header-logo"> <span>Web</span>Studio</a>
-						<button type="button" class="js-open-menu btn-hamburger">
+						<button type="button" class="btn-hamburger js-open-menu">
 							<svg class="hamburger-img" width="32" height="22">
 								<use href="./images/symbol-defs.svg#icon-hamburger"></use>
 							</svg>
 						</button>
 					</div>
-					<div class="header-meny js-menu-container is-open">
-						<button type="button" class="header-btn js-close-menu">
-							<svg width="8" height="8" class="header-svg">
-								<use href="./images/symbol-defs.svg#icon-close-meny"></use>
-							</svg>
-						</button>
-
-						<nav class="header-navigation">
-							<ul class="header-list">
-								<li class="header-item item"><a href="" class="header-link curent">Studio</a></li>
-								<li class="header-item item"><a href="./portfolio.html" class="header-link">Portfolio</a></li>
-								<li class="header-item item"><a href="" class="header-link">Contacts</a></li>
-							</ul>
-						</nav>
-
-						<address>
-							<ul class="header-adress">
-								<li class="header-item item"
-									><a href="tel:+110001111111" class="header-contacts tel">+11 (000) 111-11-11</a></li
-								>
-								<li class="header-item item"
-									><a href="mailto:info@devstudio.com" class="header-contacts header-mobail-email"
-										>info@devstudio.com
-									</a></li
-								>
-							</ul>
-						</address>
-
-						<ul class="header-meny-list">
-							<li class="meny-item">
-								<a href="" class="meny-link">
-									<svg width="24" height="24">
-										<use href="./images/symbol-defs.svg#icon-instagram"></use>
-									</svg>
-								</a>
-							</li>
-							<li class="meny-item">
-								<a href="" class="meny-link">
-									<svg width="24" height="20">
-										<use href="./images/symbol-defs.svg#icon-twitter"></use>
-									</svg>
-								</a>
-							</li>
-							<li class="meny-item">
-								<a href="" class="meny-link">
-									<svg width="24" height="24">
-										<use href="./images/symbol-defs.svg#icon-facebook"></use>
-									</svg>
-								</a>
-							</li>
-							<li class="meny-item">
-								<a href="" class="meny-link">
-									<svg width="24" height="24">
-										<use href="./images/symbol-defs.svg#icon-linkedin"></use>
-									</svg>
-								</a>
-							</li>
+					<nav class="header-navigation">
+						<ul class="header-list">
+							<li class="header-item item"><a href="" class="header-link curent">Studio</a></li>
+							<li class="header-item item"><a href="./portfolio.html" class="header-link">Portfolio</a></li>
+							<li class="header-item item"><a href="" class="header-link">Contacts</a></li>
 						</ul>
-					</div>
+					</nav>
+				</div>
+				<address>
+					<ul class="header-adress">
+						<li class="header-item item"
+							><a href="mailto:info@devstudio.com" class="header-contacts header-email">info@devstudio.com </a></li
+						>
+						<li class="header-item item"><a href="tel:+110001111111" class="header-contacts">+11 000 111-11-11</a></li>
+					</ul>
+				</address>
+			</div>
+			<div class="header-meny js-menu-container is-open">
+				<div class="container mobail-meny-container">
+					<button type="button" class="header-btn js-close-menu">
+						<svg width="8" height="8">
+							<use href="./images/symbol-defs.svg#icon-close-meny"></use>
+						</svg>
+					</button>
+					<ul class="mobail-list">
+						<li class="mobail-item item"><a href="" class="mobail-link">Studio</a></li>
+						<li class="mobail-item item"><a href="./portfolio.html" class="mobail-link">Portfolio</a></li>
+						<li class="mobail-item item"><a href="" class="mobail-link">Contacts</a></li>
+					</ul>
+
+					<ul class="mobail-contacts-list">
+						<li class="mobail-contacts-item item"
+							><a href="tel:+110001111111" class="mobail-contacts">+11 000 111-11-11</a></li
+						>
+						<li class="mobail-contacts-item item">
+							<a href="mailto:info@devstudio.com" class="mobail-contacts-email">info@devstudio.com </a></li
+						>
+					</ul>
+
+					<ul class="header-meny-list">
+						<li class="meny-item">
+							<a href="" class="meny-link">
+								<svg width="24" height="24">
+									<use href="./images/symbol-defs.svg#icon-instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="meny-item">
+							<a href="" class="meny-link">
+								<svg width="24" height="20">
+									<use href="./images/symbol-defs.svg#icon-twitter"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="meny-item">
+							<a href="" class="meny-link">
+								<svg width="24" height="24">
+									<use href="./images/symbol-defs.svg#icon-facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="meny-item">
+							<a href="" class="meny-link">
+								<svg width="24" height="24">
+									<use href="./images/symbol-defs.svg#icon-linkedin"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</header>
@@ -109,7 +118,7 @@
 					<ul class="strategy-list">
 						<li class="strategy-item item">
 							<div class="strategy-icon">
-								<svg class="strategy-icon-ptoto" wight="64" height="64">
+								<svg class="strategy-icon-ptoto" width="64" height="64">
 									<use href="./images/symbol-defs.svg#icon-antenna"></use>
 								</svg>
 							</div>
@@ -120,7 +129,7 @@
 						</li>
 						<li class="strategy-item item">
 							<div class="strategy-icon">
-								<svg class="strategy-icon-ptoto" wight="64" height="64">
+								<svg class="strategy-icon-ptoto" width="64" height="64">
 									<use href="./images/symbol-defs.svg#icon-clock"></use>
 								</svg>
 							</div>
@@ -131,7 +140,7 @@
 						</li>
 						<li class="strategy-item item">
 							<div class="strategy-icon">
-								<svg class="strategy-icon-ptoto" wight="64" height="64">
+								<svg class="strategy-icon-ptoto" width="64" height="64">
 									<use href="./images/symbol-defs.svg#icon-diagram"></use>
 								</svg>
 							</div>
@@ -142,7 +151,7 @@
 						</li>
 						<li class="strategy-item item">
 							<div class="strategy-icon">
-								<svg class="strategy-icon-ptoto" wight="64" height="64">
+								<svg class="strategy-icon-ptoto" width="64" height="64">
 									<use href="./images/symbol-defs.svg#icon-diagram"></use>
 								</svg>
 							</div>
@@ -377,42 +386,42 @@
 					<ul class="customers-list">
 						<li class="customers-item">
 							<a href="" class="customers-link">
-								<svg wight="104" height="56" class="customers-icon">
+								<svg width="104" height="56" class="customers-icon">
 									<use href="./images/symbol-defs.svg#icon-Customers-1"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="customers-item">
 							<a href="" class="customers-link">
-								<svg wight="104" height="56" class="customers-icon">
+								<svg width="104" height="56" class="customers-icon">
 									<use href="./images/symbol-defs.svg#icon-Customers-2"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="customers-item">
 							<a href="" class="customers-link">
-								<svg wight="104" height="56" class="customers-icon">
+								<svg width="104" height="56" class="customers-icon">
 									<use href="./images/symbol-defs.svg#icon-Customers-3"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="customers-item">
 							<a href="" class="customers-link">
-								<svg wight="104" height="56" class="customers-icon">
+								<svg width="104" height="56" class="customers-icon">
 									<use href="./images/symbol-defs.svg#icon-Customers-4"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="customers-item">
 							<a href="" class="customers-link">
-								<svg wight="104" height="56" class="customers-icon">
+								<svg width="104" height="56" class="customers-icon">
 									<use href="./images/symbol-defs.svg#icon-Customers-5"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="customers-item">
 							<a href="" class="customers-link">
-								<svg wight="104" height="56" class="customers-icon">
+								<svg width="104" height="56" class="customers-icon">
 									<use href="./images/symbol-defs.svg#icon-Customers-6"></use>
 								</svg>
 							</a>
@@ -543,6 +552,12 @@
 			</div>
 		</div>
 		<script src="./js/modal.js"></script>
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"
+		></script>
 		<script defer src="./js/moble-meny.js"></script>
 	</body>
 </html>
