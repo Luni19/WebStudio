@@ -36,7 +36,7 @@ ul {
 }
 .section {
   padding-bottom: 77px;
-  padding-top: 77px;
+  padding-top: 96px;
 }
 
 @media screen and (min-width: 768px) {
@@ -145,8 +145,11 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 1px;
-  font-weight: 500;
-  line-height: 24px;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 40px;
 }
 
 /* p */
@@ -1487,7 +1490,7 @@ img.work-example {
   margin-bottom: 40px;
 }
 .tel.link {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 600px;
   color: var(--secondary-accent-color);
 }
