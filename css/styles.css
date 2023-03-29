@@ -1492,6 +1492,5 @@ img.work-example {
 
 .menu-container .soc-med-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 56px;
+  gap: 30px;
 }
