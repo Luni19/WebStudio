@@ -33,15 +33,6 @@ ul {
 }
 /* ---------------common styles------------ */
 @media screen and (min-width: 320px) {
-  html,
-  .header,
-  .footer,
-  .container,
-  .section,
-  .backdrop,
-  .menu-container {
-    overflow-x: hidden;
-  }
 }
 .section {
   padding-bottom: 77px;
@@ -97,6 +88,11 @@ ul {
 }
 .logo-part {
   color: var(--accent-color);
+}
+.contacts.link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
 }
 .hero-title {
   /*h1*/
@@ -155,11 +151,10 @@ ul {
 
 /* p */
 .text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
   color: var(--primary-text-color);
-
 }
 /* ul */
 .list {
@@ -337,6 +332,9 @@ ul {
 
   .auth-nav .contacts.link {
     margin-left: auto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
   }
 
   .auth-nav .item:not(:last-child) {
@@ -490,7 +488,6 @@ ul {
 }
 .subscribe-field {
   display: flex;
-  align-items: center;
   gap: 16px;
 }
 .mail-input {
@@ -503,15 +500,15 @@ ul {
   color: var(--third-text-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-
 }
 
 .subscribe-button {
   padding: 8px 24px;
   display: flex;
   gap: 16px;
-  justify-content: center;
-  align-items: center;
+  width: 165px;
+  height: 40px;
+  margin: auto;
 }
 
 .subscribe-icon {
@@ -522,14 +519,12 @@ ul {
 }
 @media screen and (max-width: 480px) {
   .mail-input {
-    width: 100%;
-    max-width: 396px;
   }
   /*  */
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .mail-input {
-    width: 396px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1492,6 +1487,7 @@ img.work-example {
 .tel.link {
   font-size: 36px;
   font-weight: 600px;
+  color: var(--secondary-accent-color);
 }
 
 .menu-container .soc-med-list {
