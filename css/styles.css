@@ -146,10 +146,10 @@ ul {
   letter-spacing: 0.02em;
   margin-bottom: 1px;
   font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 40px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
 }
 
 /* p */
@@ -160,6 +160,14 @@ line-height: 40px;
   line-height: 24px;
   color: var(--primary-text-color);
   letter-spacing: 0.02em;
+}
+@media screen and (max-width: 1200px) {
+  .text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 /* ul */
 .list {
@@ -1490,9 +1498,16 @@ img.work-example {
   margin-bottom: 40px;
 }
 .tel.link {
-  font-size: 24px;
+  font-size: 36px;
   font-weight: 600px;
   color: var(--secondary-accent-color);
+}
+
+@media screen and (max-width:420px) {
+  .tel.link{
+    font-size: 25px;
+  }
+  
 }
 
 .menu-container .soc-med-list {
