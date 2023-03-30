@@ -146,10 +146,10 @@ ul {
   letter-spacing: 0.02em;
   margin-bottom: 1px;
   font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 40px;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
 }
 
 /* p */
@@ -530,14 +530,20 @@ ul {
   /* margin-left: 16px; */
   fill: currentColor;
 }
-@media screen and (max-width: 480px) {
-  .mail-input {
-  }
+
+
   /*  */
-}
+  @media screen and (max-width:480px) {
+    .mail-input {
+      width: 100%;
+      
+    }
+  }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .mail-input {
     width: 100%;
+    margin-right: 15px;
+    margin-left: 15px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1508,6 +1514,16 @@ img.work-example {
     font-size: 25px;
   }
   
+}
+@media screen and (max-width:321px){
+  .tel.link{
+    font-size: 20px;
+}
+}
+@media screen and (max-width:277px){
+  .tel.link{
+    font-size: 19px;
+}
 }
 
 .menu-container .soc-med-list {
