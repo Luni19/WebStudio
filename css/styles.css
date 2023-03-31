@@ -155,9 +155,11 @@ ul {
 }
 @media screen and (max-width: 1200px) {
   .title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
     letter-spacing: 0.02em;
   }
 }
@@ -580,6 +582,8 @@ ul {
 
 /* hero section */
 
+
+
 .hero {
   background-color: #2e2f42;
   text-align: center;
@@ -606,6 +610,7 @@ ul {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
+    padding: 112px 0;
     background: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
@@ -620,6 +625,7 @@ ul {
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .hero {
+    padding: 112px 0;
     background: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
@@ -789,7 +795,6 @@ img.worke-xample {
 }
 
 .thumb .advantage-icon {
-  fill: currentColor;
   display: inline-block;
   width: 64px;
   height: 64px;
@@ -965,7 +970,6 @@ section.services {
 @media screen and (min-width: 768px) {
   .customers .container {
     width: 552px;
-    padding: 0;
   }
   .customers-list {
     flex-wrap: wrap;
