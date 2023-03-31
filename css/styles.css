@@ -155,7 +155,7 @@ ul {
 }
 @media screen and (max-width: 1200px) {
   .title {
-    font-weight: 700; 
+    font-weight: 700;
     font-size: 36px;
     line-height: 40px;
     letter-spacing: 0.02em;
@@ -390,8 +390,12 @@ ul {
   color: var(--primary-bg-color);
   margin-bottom: 16px;
 }
+
 .footer-info .footer-text {
   margin-top: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 @media screen and (max-width: 767px) {
